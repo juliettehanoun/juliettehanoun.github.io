@@ -4,7 +4,7 @@ html, body {
 
 #title {
 	width: 100%;
-	height: 50vh;
+	height: 80vh;
 	z-index: -1;
 	text-align: center;
 	position: fixed;
@@ -18,7 +18,7 @@ html, body {
 }
 
 #showcase {
-	margin-top: 50vh;
+	margin-top: 80vh;
 	height: 90vh;
 	padding: 5%;
 	margin-bottom: 30vh;
