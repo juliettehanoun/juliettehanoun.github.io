@@ -15,17 +15,26 @@
 
 <body>
 
+	<a id="button-menu" class=" btn-large red dropdown-button" data-activates='dropdown1'>
+		<i class="material-icons">menu</i>
+		</a>
 
-	<div id="title" class="center-align grey-text text-darken-4">
+	<div id="header" >
 		
-		<h1>Juliette Hanoun</h1>
-		<h2>3D Animator</h2>
-		
-		
-		
-		
-	
+			<div id="title" class="center-align grey-text text-darken-4">
+				<h1>Juliette Hanoun</h1>
+				<h2>3D Animator</h2>
+			</div>
 	</div>
+	
+	<ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Home</a></li>
+    <li><a href="#!">Contact</a></li>
+    
+    <li><a href="#!">Other works</a></li>
+   
+	</ul>
+	
 	<div id="showcase" class="center-align grey darken-4 grey-text text-lighten-5;">
 		<h1 id="showcase-title">Demo Animation 2017</h1>
 		<div id="demo"> 
@@ -38,12 +47,26 @@
 	<div id="footer" class="center-align">
 		<a class="waves-effect waves-light btn" href="mailto:juliette.hanoun@gmail.com"><i class="material-icons left">mail</i>Contact</a>
 	</div>
-
 	
-
-
-
+	  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+ $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrainWidth: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left', // Displays dropdown with edge aligned to the left of button
+      stopPropagation: false // Stops event propagation
+    }
+  );
+</script>
 </body>
+
+
 
 
 
