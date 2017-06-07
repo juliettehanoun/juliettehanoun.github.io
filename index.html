@@ -2,41 +2,46 @@
 <html>
 
 <head>
- <meta charset="UTF-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="bulma.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
-<section id="header" class="hero has-text-centered ">
-	<div class="hero-body container">
-		<h1 class="title">Juliette Hanoun</h1>
-		<h2 class="subtitle">3D Animator</h2>
-	</div>
-</section>
+    <div id="title">
+        <h1 class="ui center aligned header">Juliette Hanoun</h1>
+        <h2 class="ui center aligned header">3D Animator</h2>
+    </div>
 
-<section id="showcase" class="hero is-dark has-text-centered ">
-	<div id="video-container" class="hero-body container">
-			<h1 class="title">Demo Animation 2017</h1>
-			<div id="video">
-				<iframe src="https://www.youtube.com/embed/eyk5VsySJQg" frameborder="0" allowfullscreen></iframe>
-			</div>
-	</div>
-</section>
+    <div id="tabs">
+        <div class="ui secondary menu">
+            <a class="item" data-tab="first">First</a>
+            <a class="item" data-tab="second">Second</a>
+            <a class="item" data-tab="third">Third</a>
+        </div>
+    </div>
 
-<section id="footer" class="section ">
-	<div class="has-text-centered">
-		<a class="button is-primary" href="mailto:juliette.hanoun@gmail.com">
-			<span class="icon">
-			<i class="fa fa-envelope"></i>
-			</span>
-			<span>Contact</span>
-		</a>
-	</div>
-</section>
+    <div id="pictures" class="ui grid">
+    
+            <img class="four wide column" src="images/test1.jpg">
+       
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+        <div class="four wide column"></div>
+    </div>
+
+
+
+    <!--Script-->
+    <script>
+        $('.menu .item')
+            .tab();
+
+    </script>
 
 </body>
 
- </html> 
+</html>
