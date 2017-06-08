@@ -2,32 +2,20 @@
 	padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-    /*background-color: #ba68c8;*/
+   
    
 }
-
-h1.header {
-     /*color: #ffffff !important;*/
-}
-
-h2.header {
-     /*color: #ffffff !important;*/
-}
-
-a.item {
-    /*color: #ffffff !important;*/
-}
-
 
 #tabs {
     width: 100%;
     margin: auto;
-    /*background-color: #9c27b0;*/
-    /*padding-left: 10%;*/
     margin-bottom: 10px;
-
 }
 
 #pictures {
     margin-left: 10px;
+}
+
+#picture1{
+    display: none;
 }

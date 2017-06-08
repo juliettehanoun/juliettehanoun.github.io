@@ -27,18 +27,21 @@
     <!--Tab 1-->
     <div class="ui tab active" data-tab="first">
 
-        <div id="pictures" class="ui grid">
-            <img class="four wide column" src="images/test1.jpg">
-            <div class="four wide column"></div>
-            <div class="four wide column"></div>
-            <div class="four wide column"></div>
-        </div>
+
 
     </div>
 
     <!--Tab 2-->
     <div class="ui tab" data-tab="second">
-        Second
+
+        <div id="pictures" class="ui grid">
+
+            <img id="picture1" class="four wide column" src="images/test1.jpg">
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+        </div>
+
     </div>
 
     <!--Tab 3-->
@@ -49,13 +52,24 @@
 
 
 
+
     <!--Script-->
     <script>
         $('.menu .item')
             .tab();
 
-        $('img')
-            .transition('fade');
+        /*Fade in*/
+        $('#tabs .item').tab({
+            'onVisible': function() {
+
+                $('#picture1').transition({
+                    animation: 'scale',
+                    duration: 500,
+                    allowRepeats: false
+                });
+
+            }
+        });
 
     </script>
 
